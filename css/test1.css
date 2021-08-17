@@ -1,0 +1,232 @@
+html{
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+	font-family:Verdana,sans-serif;
+	font-size:15px;
+	line-height:1.5;
+
+}
+* {
+	box-sizing: border-box;
+}
+
+body { 
+	  margin:0;
+	  background-color: #000000;
+}
+.mySlides{display: none
+		opacity: 0.75;
+		width: 1200px;
+		height: auto;
+		margin-left: auto;
+  	margin-right: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: auto;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+h1,h2,h3,h4,h5,h6{	border:0;
+					font-family:"Segoe UI",Arial,sans-serif;
+					margin:20px 0;
+					font-weight:400;
+					margin:10px 0;
+				}
+
+/* Caption text */
+.text,h3 {
+  color: #ffffff;
+  font-size: 18px;
+  padding: 8px 12px;
+  /*position: absolute;*/
+  bottom: 8px;
+  width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.header {
+  overflow: hidden;
+  background-color: #1f1f1f;
+  padding: 5px 2px;
+}
+
+.header a {
+  float: right;
+  color: white;
+  text-align: left;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a:hover {
+  background-color: #FF0000;
+  color: black;
+}
+
+.header a.active {
+  background-color: #eccfcf;
+  color: white;
+}
+
+.header-right {
+  float: right;
+
+}
+
+
+.releases{	max-width:100%;
+			height:auto;
+		}
+  
+  .header-right {
+    float: none;
+  }
+
+hr.hrLine {
+  border: 1px solid cyan;
+}
+
+p{
+	color: #ffffff;
+  font-size: 15px;
+}
+
+.gameImg{
+	float: left;
+  	width: 22.22%;
+  	padding: 10px;
+  	width:  320px;
+    height: auto;
+    padding: 0;
+    background-color: #A9A9A9;
+    transition: transform .2s;
+    width: 320px;
+    height: auto;
+    margin: auto;
+
+}
+
+.newRelease::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.gameName{
+	top:0;
+	color: #000000;
+}
+
+
+.gameImg:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); 
+}
+
+footer{
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  bottom: 0;
+  margin-top: 1000px;
+}
+
+.testdiv{
+  justify-content: center;
+
+}
+
+.avatar img{
+  float: center;
+}
+
+.coupon {
+  border: 5px dotted #bbb;
+  width: 80%;
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.expire {
+  color: red;
+}
